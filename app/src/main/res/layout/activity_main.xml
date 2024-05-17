@@ -21,12 +21,13 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycleLista"
-        android:layout_width="409dp"
-        android:layout_height="302dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titulo"
+        app:layout_constraintBottom_toBottomOf="parent"
         tools:listitem="@layout/contactlist" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

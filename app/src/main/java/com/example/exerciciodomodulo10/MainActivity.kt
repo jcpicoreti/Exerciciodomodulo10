@@ -17,8 +17,6 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
-
-
         }
 
         val listView = findViewById<RecyclerView>(R.id.recycleLista)
@@ -28,8 +26,8 @@ class MainActivity : AppCompatActivity() {
         listView.adapter = ContactsAdapter(contact)
     }
 
-    private fun createMockData(){
-        contact.add(ContactInfo("Julio","99999999"))
+    private fun createMockData() {
+        contact.add(ContactInfo("Julio", "99999999"))
         contact.add(ContactInfo("Alice Silva", "555-1234"))
         contact.add(ContactInfo("Bruno Costa", "555-5678"))
         contact.add(ContactInfo("Carla Ferreira", "555-9101"))
@@ -50,7 +48,5 @@ class MainActivity : AppCompatActivity() {
         contact.add(ContactInfo("Rafael Barros", "555-1414"))
         contact.add(ContactInfo("Sofia Cunha", "555-3434"))
         contact.add(ContactInfo("Tiago Vieira", "555-5454"))
-
-
     }
 }
